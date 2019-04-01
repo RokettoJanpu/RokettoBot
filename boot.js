@@ -7,9 +7,9 @@ const Discord = require(`discord.js`);
 // Determines whether RokettoBot is deployed via online apps or locally.
 // Don't pay this too much attention if you're not the author.
 if(process.env.PREFIX != undefined){
-	const prefix = process.env.PREFIX;
-	const botToken = process.env.BOT_TOKEN;
-	const giphyKey = process.env.GIPHY_KEY;
+	prefix = process.env.PREFIX;
+	botToken = process.env.BOT_TOKEN;
+	giphyKey = process.env.GIPHY_KEY;
 }
 
 // Logs in RokettoBot.
