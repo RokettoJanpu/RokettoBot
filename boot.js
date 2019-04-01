@@ -2,7 +2,7 @@ const fs = require(`fs`);
 const Discord = require(`discord.js`);
 
 // Grabs the command prefix and tokens from config.json
-const {prefix, botToken, giphyKey} = require(`./config.json`);
+//const {prefix, botToken, giphyKey} = require(`./config.json`);
 
 // Determines whether RokettoBot is deployed via online apps or locally.
 // Don't pay this too much attention if you're not the author.
