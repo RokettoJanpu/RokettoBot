@@ -6,11 +6,11 @@ const {prefix, botToken, giphyKey} = require(`./config.json`);
 
 // Determines whether RokettoBot is deployed via online apps or locally.
 // Don't pay this too much attention if you're not the author.
-if(process.env.PREFIX != undefined){
+//if(process.env.PREFIX != undefined){
 	prefix = process.env.PREFIX;
 	botToken = process.env.BOT_TOKEN;
 	giphyKey = process.env.GIPHY_KEY;
-}
+//}
 
 // Logs in RokettoBot.
 const bot = new Discord.Client();								
