@@ -1,5 +1,5 @@
 {
-	"prefix": "!",
-	"botToken": "lol",
-	"giphyKey": "7QC4HWOhCCTrmuhvCDHFspEx5BTmSMkH"
+	"prefix": "Enter your preferred command prefix here",
+	"botToken": "Register a Discord bot and enter its token here",
+	"giphyKey": "Register a Giphy API key and enter it here"
 }
