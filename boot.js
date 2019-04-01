@@ -6,11 +6,10 @@ const {prefix, botToken, giphyKey} = require(`./config.json`);
 
 // Determines whether RokettoBot is deployed via online apps or locally.
 // Don't pay this too much attention if you're not the author.
-const pe = process.env;
-if(pe.PREFIX != undefined){
-	prefix = pe.PREFIX;
-	botToken = pe.BOT_TOKEN;
-	giphyKey = pe.GIPHY_KEY;
+if(process.env.PREFIX != undefined){
+	prefix = process.env.PREFIX;
+	botToken = process.env.BOT_TOKEN;
+	giphyKey = process.env.GIPHY_KEY;
 }
 
 // Logs in RokettoBot.
@@ -29,7 +28,7 @@ for (const file of commandFiles) {
 	bot.commands.set(command.name, command);
 }
 
-// Initializes some variables. To be explained further below...
+// Initializes some variables. To be explained further below.
 var args, cmd, mentions, query, queryString, atUser, user, toUser;
 
 // Logs this message to the console when RokettoBot boots up.
