@@ -19,7 +19,7 @@ bot.login(botToken);
 var giphyAPIClient = require(`giphy-js-sdk-core`);
 giphy = giphyAPIClient(giphyKey);
 
-// Loops through the commands file and adds each command to the bot.
+// Loops through the bot_commands file and adds each command to the bot.
 bot.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync(`./bot_commands`).filter(file => file.endsWith(`.js`));
 for (const file of commandFiles) {
