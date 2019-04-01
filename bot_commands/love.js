@@ -8,8 +8,8 @@ module.exports = {
 				files: [response.data[Math.floor(Math.random()*response.data.length)].images.fixed_height.url]
 			})
 		}).catch(() => {
-            botResponse = `Error: Failed to find related berry gif! :pensive:`;
-            atUser.send(botResponse);
+            		botResponse = `Error: Failed to find related berry gif! :pensive:`;
+            		atUser.send(botResponse);
         })
 		logResponse = `Sent DM to ${user} (${atUser}): ${botResponse}`;
 	},
