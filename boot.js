@@ -29,7 +29,7 @@ for (const file of commandFiles) {
 	bot.commands.set(command.name, command);
 }
 
-// Initializes some variables. To be explained further below.
+// Initializes some variables. To be explained further below...
 var args, cmd, mentions, query, queryString, atUser, user, toUser;
 
 // Logs this message to the console when RokettoBot boots up.
