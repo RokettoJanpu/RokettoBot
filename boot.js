@@ -4,7 +4,7 @@ const Discord = require(`discord.js`);
 // Grabs the command prefix and tokens from config.json
 const {prefix, botToken, giphyKey} = require(`./config.json`);
 const bot = new Discord.Client();								
-bot.login(botToken);
+bot.login(process.env.BOT_TOKEN);
 
 // Interfaces with Giphy's API.
 var giphyAPIClient = require(`giphy-js-sdk-core`);
