@@ -4,7 +4,16 @@ const Discord = require(`discord.js`);
 // Grabs the command prefix and tokens from config.json
 const {prefix, botToken, giphyKey} = require(`./config.json`);
 const bot = new Discord.Client();								
-bot.login(process.env.BOT_TOKEN);
+bot.login(botToken);
+
+// Determines whether RokettoBot is deployed via online apps or locally.
+// Don't pay this too much attention if you're not the author.
+const pe = process.env;
+if(pe.PREFIX != undefined){
+	prefix = pe.PREFIX;
+	botToken = pe.BOT_TOKEN;
+	giphyKey = pe.GIPHY_KEY;
+}
 
 // Interfaces with Giphy's API.
 var giphyAPIClient = require(`giphy-js-sdk-core`);
