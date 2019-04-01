@@ -8,6 +8,8 @@ const Discord = require(`discord.js`);
 // Don't pay this too much attention if you're not the author.
 if(process.env.PREFIX != undefined){
 	prefix = process.env.PREFIX, botToken = process.env.BOT_TOKEN, giphyKey = process.env.GIPHY_KEY;
+}else{
+const {prefix, botToken, giphyKey} = require(`./config.json`);
 }
 
 // Logs in RokettoBot.
