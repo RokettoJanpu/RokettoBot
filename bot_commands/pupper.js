@@ -10,9 +10,9 @@ module.exports = {
 				files: [response.data[Math.floor(Math.random()*response.data.length)].images.fixed_height.url]
 			})
 		}).catch(() => {
-            		botResponse = `Error: Failed to find related ${searchWord} gif! :pensive:`;
-            		message.channel.send(botResponse);
+            	botResponse = `Error: Failed to find related ${searchWord} gif! :pensive:`;
+            	message.channel.send(botResponse);
         })
-        	logResponse = botResponse;
+        logResponse = botResponse;
 	},
 };
