@@ -1,5 +1,6 @@
 const fs = require(`fs`);
 const Discord = require(`discord.js`);
+const mysql = require(`mysql`);
 
 /**
  * Grabs the command prefix and tokens from config.json
@@ -17,9 +18,26 @@ if(process.env.PREFIX != undefined){
 const bot = new Discord.Client();								
 bot.login(botToken);
 
+// Sets up a connection to MySQL database.
+var dbase = mysql.createConnection({
+	host: "localhost",
+	user: "u427550163_rkbot",
+	password: "Rc110600",
+	database: "u427550163_rkbot":
+});
+
+// Actually (tries to) connect to my database.
+dbase.connect(err => {
+	if(err){
+		console.log(`Error! Couldn't connect to the database: ${err}`);
+		throw err;
+	}
+	console.log(`Connected to the database!`);
+});
+
 // Interfaces with Giphy's API.
 var giphyAPIClient = require(`giphy-js-sdk-core`);
-giphy = giphyAPIClient(giphyKey);
+var giphy = giphyAPIClient(giphyKey);
 
 // Loops through the bot_commands file and adds each command to the bot.
 bot.commands = new Discord.Collection();
