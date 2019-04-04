@@ -26,14 +26,14 @@ var dbase = mysql.createConnection({
 	database: "u427550163_rkbot"
 });*/
 
-// Actually (tries to) connect to my database.
+/* Actually (tries to) connect to my database.
 dbase.connect(err => {
 	if(err){
 		console.log(`Error! Couldn't connect to the database: ${err}`);
 		throw err;
 	}
 	console.log(`Connected to the database!`);
-});
+});*/
 
 // Interfaces with Giphy's API.
 var giphyAPIClient = require(`giphy-js-sdk-core`);
