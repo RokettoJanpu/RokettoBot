@@ -52,6 +52,7 @@ var args, cmd, mentions, query, queryString, atUser, user, toUser, botResponse, 
 
 // Logs this message to the console when RokettoBot boots up.
 bot.once(`ready`, () => {
+	bot.user.setGame(`by my own rules...`);
 	console.log(`Now witness the firepower of this fully armed and operational Discord Bot!`); 
 })
 
