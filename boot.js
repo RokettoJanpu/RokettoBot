@@ -18,13 +18,13 @@ if(process.env.PREFIX != undefined){
 const bot = new Discord.Client();								
 bot.login(botToken);
 
-// Sets up a connection to MySQL database.
+/* Sets up a connection to MySQL database.
 var dbase = mysql.createConnection({
 	host: "localhost",
 	user: "u427550163_rkbot",
 	password: "Rc110600",
 	database: "u427550163_rkbot"
-});
+});*/
 
 // Actually (tries to) connect to my database.
 dbase.connect(err => {
