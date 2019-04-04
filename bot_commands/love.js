@@ -11,6 +11,6 @@ module.exports = {
             	botResponse = `Error: Failed to find related berry gif! :pensive:`;
             	atUser.send(botResponse);
         })
-		logResponse = `Sent DM to ${user} (${atUser}): ${botResponse}`;
+		logResponse = `Sent DM to ${user} (${atUser.id}): ${botResponse}`;
 	},
 };
