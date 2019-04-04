@@ -22,7 +22,7 @@ bot.login(botToken);
 var dbase = mysql.createConnection({
 	host: "localhost",
 	user: "u427550163_rkbot",
-	password: "Rc110600",
+	password: "",
 	database: "u427550163_rkbot"
 });*/
 
