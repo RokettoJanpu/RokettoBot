@@ -102,6 +102,6 @@ bot.on(`message`, message => {
 			console.log(`RokettoBot: ${logResponse}`); 
 		}catch(error){
 			console.error(error);
-			message.reply(`Error!`);
+			message.reply(`Error: ${error}`);
 		}
 })
