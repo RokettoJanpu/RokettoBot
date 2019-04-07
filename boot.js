@@ -37,7 +37,7 @@ dbase.connect(err => {
 
 // Interfaces with Giphy's API.
 var giphyAPIClient = require(`giphy-js-sdk-core`);
-var giphy = giphyAPIClient(giphyKey);
+giphy = giphyAPIClient(giphyKey);
 
 // Loops through the bot_commands file and adds each command to the bot.
 bot.commands = new Discord.Collection();
